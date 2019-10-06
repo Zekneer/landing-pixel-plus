@@ -22,7 +22,7 @@
     color: $font-color
 
 .leftblock
-  max-width: 200px
+  min-width: 185px
   &__item
     &_active,
     &:hover
@@ -57,3 +57,38 @@
     background-image: url('../img/leftblock/xl.png')
     background-repeat: no-repeat
     background-position: top center
+
+.good-card
+  width: 250px
+  height: 380px
+  padding: 20px
+  display: flex
+  flex-direction: column
+  background-color: $light-bg-color
+  &__promo
+    margin-top: 12px
+    font-size: 18px
+    line-height: 1
+  &__cart-wrap
+    margin-top: auto
+    display: flex
+    justify-content: space-between
+  &__price
+    font-size: 28px
+    font-weight: 700
+    color: #444
+  &__cart
+    width: 28px
+    height: 21px
+    background-image: url('../img/centerblock/basket.png')
+    background-repeat: no-repeat
+    background-position: center
+    cursor: pointer
+
+.goods
+  &__card
+    margin-left: 15px
+    margin-bottom: 20px
+  &__container
+    display: flex
+    flex-wrap: wrap

@@ -6,6 +6,14 @@ mixin leftblockSubmenuItem(title)
   li.leftblock__submenu-item
     a.leftblock__submenu-title(href="#")= title
 
+mixin goodCard
+  .good-card.goods__card
+    img.good-card__image(src="./img/centerblock/no-photo.jpg", alt="Фото товара", width="210", height="210")
+    p.good-card__promo Самый клевый чайник, который надо купить!
+    .good-card__cart-wrap
+      .good-card__price 1 900 р.
+      a.good-card__cart(href="#")
+
 main.content
   .container
     ul.breadcrumbs
@@ -34,7 +42,11 @@ main.content
       .centerblock
         .goods
           .goods__container
-            .goods__card
-          ul.pages
+            +goodCard
+            +goodCard
+            +goodCard
+            +goodCard
+            +goodCard
+          ul.paginator.goods__paginator
         .about-company
 
