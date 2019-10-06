@@ -1,6 +1,9 @@
 .content
   display: flex
   flex-direction: column
+  &__inner
+    margin-top: 15px
+    display: flex
 
 .breadcrumbs
   height: 30px
@@ -17,3 +20,40 @@
   &__link
     text-decoration: underline
     color: $font-color
+
+.leftblock
+  max-width: 200px
+  &__item
+    &_active,
+    &:hover
+      .leftblock__title
+        text-decoration: underline
+  &__title
+    font-size: 18px
+    line-height: 30px
+    color: $font-color
+  &__submenu
+    &-item
+      &::before
+        content: "\2022"
+        display: inline-block
+        margin: 0 4px 0 7px
+        color: $font-color
+      &_active,
+      &:hover
+        .leftblock__submenu-title
+          color: #010101
+          text-decoration: underline
+    &-title
+      color: $font-color
+  &__pricelist
+    display: block
+    padding-top: 115px
+    margin-top: 110px
+    font-size: 30px
+    font-weight: 700
+    color: #444444
+    text-align: center
+    background-image: url('../img/leftblock/xl.png')
+    background-repeat: no-repeat
+    background-position: top center
