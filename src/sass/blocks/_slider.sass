@@ -1,0 +1,31 @@
+.slider
+  background-color: $slider-bg-color
+  &__slide
+    min-height: 400px
+    display: none
+    background-size: auto
+    background-position: center bottom
+    background-repeat: no-repeat
+    &_active
+      display: block
+    &:nth-of-type(1)
+      background-image: url('../img/slider/slide-1.png')
+    &:nth-of-type(2)
+      background-image: url('../img/slider/slide-2.png')
+  &__container
+    max-height: 0
+  &__controls
+    display: flex
+    justify-content: space-between
+    transform: translateY(calc(-200px - 50%))
+  &__prev
+    width: 33px
+    height: 60px
+    background-image: url("../img/slider/left.png")
+    cursor: pointer
+  &__next
+    width: 33px
+    height: 60px
+    background-image: url("../img/slider/right.png")
+    cursor: pointer
+  
