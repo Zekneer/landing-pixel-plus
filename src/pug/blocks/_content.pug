@@ -1,0 +1,39 @@
+mixin leftblockItem(title)
+  li.leftblock__item
+    a.leftblock__title(href="#")= title
+
+mixin leftblockSubmenuItem(title)
+  li.leftblock__submenu-item
+    a.leftblock__submenu-title(href="#")= title
+
+main.content
+  .container
+    ul.breadcrumbs
+      li.breadcrumbs__item
+        a.breadcrumbs__link(href="#") Главная
+      li.breadcrumbs__item
+        a.breadcrumbs__link(href="#") Каталог
+      li.breadcrumbs__item.breadcrumbs__item_active Бытовая техника
+    .leftblock
+      ul.leftblock__menu
+        +leftblockItem("Автомобили")
+        li.leftblock__item.leftblock__item_active
+          a.leftblock__title(href="#") Бытовая техника
+          ul.leftblock__submenu
+            li.leftblock__submenu-item
+              a.leftblock__submenu-title.leftblock__submenu-title_active(href="#") Микроволновки
+            +leftblockSubmenuItem("Холодильники")
+            +leftblockSubmenuItem("Посудомоечные машины")
+            +leftblockSubmenuItem("Чайники")
+        +leftblockItem("Мобильная техника")
+        +leftblockItem("Компьютеры")
+        +leftblockItem("Одежда")
+        +leftblockItem("Недвижимость")
+      a.leftblock__pricelist
+    .centerblock
+      .goods
+        .goods__container
+          .goods__card
+        ul.pages
+      .about-company
+

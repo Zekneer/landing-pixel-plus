@@ -1,0 +1,19 @@
+.content
+  display: flex
+  flex-direction: column
+
+.breadcrumbs
+  height: 30px
+  display: flex
+  align-items: center
+  &__item
+    &::before
+      content: "/"
+      margin: 0 5px
+      color: $font-color
+    &:first-of-type::before
+      content: ""
+      margin: 0
+  &__link
+    text-decoration: underline
+    color: $font-color
