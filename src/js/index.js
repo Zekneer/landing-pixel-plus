@@ -9,3 +9,7 @@ require('./modules/polyfills/index');
 require('./modules/general-click-handler/index');
 // Slider
 require('./modules/slider/index');
+// Autoedit phone
+require('./modules/autoedit/index');
+// Form submit
+require('./modules/formSubmit/index');
