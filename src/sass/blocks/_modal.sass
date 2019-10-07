@@ -1,0 +1,84 @@
+.modal
+  position: absolute
+  z-index: 99
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  display: none
+  height: 100%
+  width: 100%
+  color: #535353
+  background-color: rgba(0, 0, 0, 0.5)
+  &__content
+    position: relative
+    max-width: 470px
+    padding: 26px 0
+    margin: 25% auto 0
+    background-color: #fff
+  &__title
+    margin-top: 10px
+    margin-bottom: 8px
+    font-size: 24px
+    font-weight: 700
+    text-align: center
+    text-transform: uppercase
+  &__close-button
+    position: absolute
+    width: 26px
+    height: 26px
+    background-color: #777
+    top: -26px
+    right: -26px
+    &::before
+      position: absolute
+      content: ""
+      height: 20px
+      width: 1px
+      top: 3px
+      left: 12px
+      background-color: #fff
+      transform: rotate(-45deg)
+    &::after
+      position: absolute
+      content: ""
+      height: 20px
+      width: 1px
+      top: 3px
+      left: 12px
+      background-color: #fff
+      transform: rotate(45deg)
+
+.form
+  display: flex
+  align-items: center
+  flex-direction: column
+  &__label
+    text-align: center
+  &__group
+    margin-top: 18px
+    display: flex
+    flex-direction: column
+  &__input
+    width: 340px
+    height: 40px
+    padding: 0 15px
+    border: 1px solid #c3c3c3
+    &_error
+      border: 1px solid #ff8383
+      box-shadow: 0 0 10px 0 inset #ff8383
+      &::placeholder
+        color: #dc7f7f
+  &__area
+    width: 340px
+    height: 140px
+    resize: none
+  &__submit
+    display: inline-block
+    padding: 14px 17px
+    font-size: 18px
+    line-height: 1
+    font-weight: 700
+    color: #fff
+    text-transform: uppercase
+    background-color: #777777

@@ -1,0 +1,19 @@
+.modal
+  .modal__content#feedback
+    button.btn.modal__close-button
+    h3.modal__title Обратная связь
+    form.form.modal__form(action="#")
+      .form__group
+        label.form__label(for="name") Ваше имя *
+        input.form__input#name(type="text", name="name", placeholder="")
+      .form__group
+        label.form__label(for="tel") Телефон *
+        input.form__input#tel(type="tel", name="tel", placeholder="")
+      .form__group
+        label.form__label(for="email") Email *
+        input.form__input.form__input_error#email(type="email", name="email", placeholder="Ошибка")
+      .form__group
+        label.form__label(for="msg") Сообщение
+        textarea.form__area#msg(name="msg", cols="30", rows="10")
+      .form__group.form__group_submit
+        input.form__submit#send(type="submit", name="send", value="Отправить")
