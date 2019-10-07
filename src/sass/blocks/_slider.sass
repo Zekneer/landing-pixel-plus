@@ -29,3 +29,17 @@
     background-image: url("../img/slider/right.png")
     cursor: pointer
   
++tablet
+  .slider
+    &__slide
+      min-height: 300px
+      background-size: cover
+    &__controls
+      transform: translateY(calc(-150px - 50%))
+
++mobileL
+  .slider
+    &__slide
+      min-height: 200px
+    &__controls
+      transform: translateY(calc(-100px - 50%))
