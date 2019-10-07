@@ -1,7 +1,7 @@
 .header
   background-color: $light-bg-color
   &__inner
-    height: 230px
+    min-height: 230px
     display: flex
     justify-content: space-between
   &__logo-wrapper
@@ -22,6 +22,34 @@
   &__btn-feedback
     font-size: 24px
     font-weight: 700
-    line-height: 24px
+    line-height: 1
     color: $font-color
     border-bottom: 2px dashed $font-color
+
++tablet
+  .header
+    &__inner
+      min-height: 150px
+    &__logo-wrapper
+      width: 200px
+    &__feadback
+      padding-top: 20px
+      line-height: 30px
+    &__phone
+      font-size: 25px
+    &__btn-feedback
+      font-size: 16px
+
++mobileL
+  .header
+    &__inner
+      min-height: 100px
+    &__logo-wrapper
+      width: 150px
+    &__feadback
+      padding-top: 10px
+      line-height: 20px
+    &__phone
+      font-size: 18px
+    &__btn-feedback
+      font-size: 14px

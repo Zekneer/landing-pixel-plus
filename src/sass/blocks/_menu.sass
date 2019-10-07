@@ -1,12 +1,13 @@
 .menu
   background-color: $dark-bg-color
   &__inner
-    height: 80px
+    min-height: 80px
     display: flex
     justify-content: center
     align-items: center
   &__item
     padding: 0 20px
+    text-align: center
     border-right: 2px solid $font-color-light
     &:last-of-type
       border-right: 0
@@ -15,3 +16,18 @@
     color: $font-color-light
     &:hover
       text-decoration: underline
+
++tablet
+  .menu
+    &__inner
+      min-height: 50px
+      flex-wrap: wrap
+    &__item
+      border-right: 0
+    &__link
+      font-size: 22px
+
++mobileL
+  .menu
+    &__inner
+      flex-direction: column
