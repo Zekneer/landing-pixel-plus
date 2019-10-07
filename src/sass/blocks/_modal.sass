@@ -82,3 +82,28 @@
     color: #fff
     text-transform: uppercase
     background-color: #777777
+
++tablet
+  .modal
+    &__content
+      max-width: 360px
+    &__close-button
+      position: absolute
+      width: 26px
+      height: 26px
+      background-color: #fff
+      top: 0
+      right: 0
+      &::before
+        background-color: #777
+      &::after
+        background-color: #777
+
++mobileL
+  .modal
+    &__content
+      max-width: 300px
+  .form
+    &__input,
+    &__area
+      width: 280px
